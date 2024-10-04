@@ -1,0 +1,98 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999999;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 15px 0px;
+    padding: 15px 0;
+    animation: fadeInDown 1s both 0.2s;
+  }
+  
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 32px;
+    font-weight: 600;
+    color: #10B98B;
+    margin: 0;
+    font-family: "Ropa Sans", sans-serif;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .navList {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navItem {
+    margin-left: 15px;
+  }
+  
+  .navLink {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    transition: color 0.3s;
+  }
+  
+  .navLink:hover {
+    color: #10B98B;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .nav {
+      margin-top: 15px;
+    }
+  
+    .navList {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navItem {
+      margin: 10px 0;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
